@@ -21,6 +21,11 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('This is a test. Please ingore this message.') {
+            steps {
+                echo 'TEST TEST TEST'
+            }
+        }
         stage('Complete') {
             steps {
                 echo 'Job Complete!'
